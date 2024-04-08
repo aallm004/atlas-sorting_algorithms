@@ -24,7 +24,13 @@ void insertion_sort_list(listint_t **list)
 				change->next->prev = prior;
 			if (prior->prev)
 				prior->prev->next = change;
-
+			else
+				*list = change;
+			prior->next = change->next;
+			change->prev = prior->prev;
+			change->next = prior;
+			prior->prev = change;
+			
 			print_list(*list);
 		}
 	}
