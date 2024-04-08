@@ -4,7 +4,7 @@
  * 
  * @array: array of number
  * @size: number of numbers
- * 
+ *  
  * Return:
 */
 void selection_sort(int *array, size_t size)
@@ -15,7 +15,7 @@ void selection_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 	return;
 
-	a = 0
+	a = 0;
 	while (a < size - 1)
 	{
 		min = a;
