@@ -1,9 +1,9 @@
 #include "sort.h"
 /**
  * insertion_sort_list - function that sorts doubly link list of ints
- * 
+ *
  * @list: doubly link list of ints to list
- * 
+ *
  * Return:
 */
 void insertion_sort_list(listint_t **list)
@@ -30,7 +30,7 @@ void insertion_sort_list(listint_t **list)
 			change->prev = prior->prev;
 			change->next = prior;
 			prior->prev = change;
-			
+
 			print_list(*list);
 		}
 	}
