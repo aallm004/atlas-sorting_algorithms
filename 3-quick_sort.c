@@ -17,7 +17,7 @@ void swap(int *a, int *b)
 }
 
 /**
- * _split - Split the array and take last element as pivot
+ * _splits - Splits the array and take last element as pivot
  * @arr: Array
  * @min: first element
  * @last: last element
@@ -67,7 +67,7 @@ void quick_sort_array(int *arr, int min, int last, size_t size)
 
 	int pivot;
 
-	if (min < last)
+	if (last < min)
 	{
 		pivot = splits(arr, min, last, size);
 		quick_sort_array(arr, min, (pivot - 1), size);
