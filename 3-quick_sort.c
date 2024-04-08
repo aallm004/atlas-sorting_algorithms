@@ -67,7 +67,7 @@ void quick_sort_array(int *arr, int min, int last, size_t size)
 
 	int pivot;
 
-	if (last < min)
+	if (min > last)
 	{
 		pivot = splits(arr, min, last, size);
 		quick_sort_array(arr, min, (pivot - 1), size);
