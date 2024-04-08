@@ -26,13 +26,13 @@ void selection_sort(int *array, size_t size)
 			min = b;
 		}
 
-		if (min != i)
+		if (min != a)
 		{
 			temp = array[a];
 			array[a] = array[min];
 			array[min] = temp;
 			print_array(array, size);
 		}
-		a++
+		a++;
 	}
 }
