@@ -17,7 +17,7 @@ void swap(int *a, int *b)
 }
 
 /**
- * _splits - Splits the array and take last element as pivot
+ * splits - Splits the array and take last element as pivot
  * @arr: Array
  * @min: first element
  * @last: last element
